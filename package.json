@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build&& cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
+    "build": "next build && shx cp -r public .next/standalone/ && shx cp -r .next/static .next/standalone/.next/",
     "start": "next start",
     "lint": "eslint"
   },
@@ -35,6 +35,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
     "prisma": "^6.19.3",
+    "shx": "^0.4.0",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",
     "typescript": "^5"

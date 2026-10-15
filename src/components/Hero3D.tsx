@@ -24,7 +24,7 @@ const fadeUp = {
     transition: {
       duration: 0.9,
       delay: 0.2 + i * 0.15,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   }),
 };
@@ -122,7 +122,7 @@ export default function Hero3D() {
                   transition={{
                     delay: 1.4,
                     duration: 0.9,
-                    ease: [0.22, 1, 0.36, 1],
+                    ease: [0.22, 1, 0.36, 1] as const,
                   }}
                   className="absolute -bottom-2 left-0 right-0 h-1 bg-linear-to-r from-cyan-400 to-indigo-500 origin-left glow-cyan"
                 />
