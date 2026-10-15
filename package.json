@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "db:local:generate": "prisma generate --schema=prisma/schema.local.prisma",
+    "db:local:migrate": "prisma migrate dev --schema=prisma/schema.local.prisma",
+    "db:prod:deploy": "prisma migrate deploy",
     "dev": "next dev",
     "build": "next build && shx cp -r public .next/standalone/ && shx cp -r .next/static .next/standalone/.next/",
     "start": "next start",
