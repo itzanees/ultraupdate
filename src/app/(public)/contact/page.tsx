@@ -86,10 +86,11 @@ export default function ContactPage() {
           </>
         }
         subtitle="Talk directly to the team that will build your facility. No forms lost in an inbox, no call-center queues — a straight line to the engineers who deliver."
-        backgroundImage="/about-warehouse.webp"
-        backgroundAlt="Ultratek Arabia warehouse"
-        height="md"
-        overlay="heavy"
+        backgroundImage="/contact.webp"
+        backgroundAlt="Ultratek Arabia Contact"
+        align="center"
+        height="lg"
+        overlay="light"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Contact" },

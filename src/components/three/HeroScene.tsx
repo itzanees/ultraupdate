@@ -10,77 +10,10 @@ import {
   Sparkles,
 } from "@react-three/drei";
 import { EffectComposer, Bloom, Vignette } from "@react-three/postprocessing";
+
 import { Suspense, useRef } from "react";
 import * as THREE from "three";
 
-// function ColdChamber() {
-//   const meshRef = useRef<THREE.Mesh>(null);
-
-//   useFrame((state) => {
-//     if (!meshRef.current) return;
-//     const t = state.clock.getElapsedTime();
-//     meshRef.current.rotation.y = t * 0.15;
-//     meshRef.current.rotation.x = Math.sin(t * 0.3) * 0.1;
-//   });
-
-//   return (
-//     <Float speed={1.2} rotationIntensity={0.3} floatIntensity={0.6}>
-//       <mesh ref={meshRef} position={[0, 0, 0]} scale={0.09}>
-//         <icosahedronGeometry args={[1, 4]} />
-//         <MeshTransmissionMaterial
-//           backside
-//           samples={6}
-//           thickness={0.5}
-//           chromaticAberration={0.4}
-//           anisotropy={0.3}
-//           distortion={0.2}
-//           distortionScale={0.5}
-//           temporalDistortion={0.1}
-//           ior={1.4}
-//           color="#22D3EE"
-//           attenuationDistance={1}
-//           attenuationColor="#6366F1"
-//         />
-//       </mesh>
-//     </Float>
-//   );
-// }
-
-// function AmbientCubes() {
-//   const group = useRef<THREE.Group>(null);
-
-//   useFrame((state) => {
-//     if (!group.current) return;
-//     group.current.rotation.y = state.clock.getElapsedTime() * 0.05;
-//   });
-
-//   const positions: [number, number, number][] = [
-//     [-3, 1.5, -2],
-//     [3.5, -1, -1.5],
-//     [-2.5, -1.8, 1],
-//     [2.8, 2, 0.5],
-//     [0, -2.5, -3],
-//     [-4, 0, 2],
-//   ];
-
-//   return (
-//     <group ref={group}>
-//       {positions.map((pos, i) => (
-//         <Float key={i} speed={1 + i * 0.2} floatIntensity={1}>
-//           <mesh position={pos} rotation={[Math.random(), Math.random(), 0]}>
-//             <boxGeometry args={[0.3, 0.3, 0.3]} />
-//             <meshStandardMaterial
-//               color={i % 2 === 0 ? "#22D3EE" : "#6366F1"}
-//               emissive={i % 2 === 0 ? "#22D3EE" : "#6366F1"}
-//               emissiveIntensity={2}
-//               toneMapped={false}
-//             />
-//           </mesh>
-//         </Float>
-//       ))}
-//     </group>
-//   );
-// }
 
 export default function HeroScene() {
   return (

@@ -134,7 +134,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         backgroundImage={service.image}
         backgroundAlt={service.title}
         height="lg"
-        overlay="heavy"
+        overlay="light"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },

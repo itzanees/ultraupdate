@@ -67,7 +67,7 @@ export default function AboutPage() {
         backgroundImage="/about-construction.webp"
         backgroundAlt="Ultratek Arabia construction site"
         align="center"
-        height="md"
+        height="lg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "About Us" },

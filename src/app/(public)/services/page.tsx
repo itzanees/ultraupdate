@@ -172,7 +172,7 @@ export default function ServicesPage() {
         backgroundImage="/services-hero.webp"
         backgroundAlt="Ultratek Arabia services"
         align="center"
-        height="md"
+        height="lg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services" },

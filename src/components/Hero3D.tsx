@@ -80,7 +80,7 @@ export default function Hero3D() {
       {/* Layer 3 — Grid overlay */}
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none z-[2]" />
 
-      {/* Layer 4 — Content (unchanged) */}
+      {/* Layer 4 — Content */}
       <div className="container mx-auto px-6 relative z-10 pt-32 pb-20">
         <div className="max-w-4xl">
           {/* Eyebrow */}
@@ -108,7 +108,7 @@ export default function Hero3D() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tighter mt-4 mb-8 text-white"
+              className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-[-0.04em] mt-4 mb-8 text-white"
             >
               Smart, <span className="text-gradient">Scalable</span>
               <br />
@@ -141,8 +141,10 @@ export default function Hero3D() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg md:text-xl text-blue-50 max-w-2xl mb-4 leading-relaxed"
             >
-              Industry-leading temperature-controlled infrastructure engineered
-              for the future of logistics in the Kingdom.
+              {/* Industry-leading temperature-controlled infrastructure engineered
+              for the future of logistics in the Kingdom. */}
+              Building the future of cold chain logistics: High-performance, climate-controlled facility development for the Kingdom.
+
             </motion.p>
           </div>
 
@@ -168,7 +170,7 @@ export default function Hero3D() {
 
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full glass text-white font-bold hover:bg-mist-500 hover:border-cyan-400/40 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full glass text-white font-bold hover:bg-blue-900 hover:border-cyan-400 hover:border-2 transition-all duration-300"
             >
               Explore Services
             </Link>

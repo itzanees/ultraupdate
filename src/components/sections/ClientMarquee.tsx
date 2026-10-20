@@ -37,7 +37,7 @@ export default function ClientMarquee() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl md:text-6xl font-black text-white mb-4 tracking-tighter"
           >
-            Trusted by <span className="text-gradient">Industry Leaders</span>
+            Trusted by <span className="text-gradient">Clients</span>
           </motion.h2>
 
           <motion.p
