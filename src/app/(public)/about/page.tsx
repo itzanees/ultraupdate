@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Target, Leaf, Users, ArrowRight, icons, LayoutDashboard } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import ISOStrip from "@/components/sections/ISOStrip";
+import { ISOMotion } from "@/components/sections/ISOStrip";
 import TiltCard from "@/components/ui/TiltCard";
 import ComprehensiveSolutions from "@/components/sections/ComprehensiveSolutions";
 
@@ -63,7 +64,7 @@ export default function AboutPage() {
             <span className="text-gradient">Infrastructure of <br /> Tomorrow</span>
           </>
         }
-        subtitle="Ultratek Arabia combines two decades of expertise with cutting-edge technology to redefine industrial construction standards in Saudi Arabia."
+        subtitle="Ultratek Arabia combines more than two decades of expertise with cutting-edge technology to redefine industrial cold storage construction standards in Saudi Arabia."
         backgroundImage="/about-construction.webp"
         backgroundAlt="Ultratek Arabia construction site"
         align="center"
@@ -74,6 +75,7 @@ export default function AboutPage() {
         ]}
         overlay="light"
       />
+      <ISOMotion />
 
       {/* 2. COMPANY STORY */}
       <section className="relative py-36 bg-background overflow-hidden">
@@ -241,10 +243,10 @@ export default function AboutPage() {
             <div className="flex flex-col items-center gap-2">
               <div className="w-16 h-1 rounded-full bg-gradient-to-r from-cyan-400 to-indigo-500 mb-4" />
               <h4 className="text-lg font-bold text-foreground">
-                Abdullah Mullapally
+                Abdulla Mullapally
               </h4>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-400">
-                Founder &amp; CEO
+                Founder &amp; Managing Director
               </p>
             </div>
           </div>

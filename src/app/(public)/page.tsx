@@ -45,8 +45,8 @@ export default function HomePage() {
   return (
     <>
       <Hero3D />
-      <StatsStrip />
       <WhoWeAre />
+      <StatsStrip />
       <ISOStrip />
       <SectorsSection />
       <Testimonials />

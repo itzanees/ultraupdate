@@ -9,7 +9,7 @@ const tabs = [
     id: "mission",
     label: "OUR MISSION",
     description:
-      "Our mission is to provide high-quality, end-to-end construction services for cold rooms and warehouses, combining over 25+ years of expertise with skilled workmanship, modern equipment, and dedicated manpower. Whether delivering complete turnkey projects or executing specialized scopes, we are committed to reliability, safety, and long-term client satisfaction in every project we undertake.",
+      "Our mission is to provide high-quality, end-to-end construction services for cold storages and warehouses, combining over 25+ years of expertise with skilled workmanship, modern equipment, and dedicated manpower. Whether delivering complete turnkey projects or executing specialized scopes, we are committed to reliability, safety, and long-term client satisfaction in every project we undertake.",
     image: "/cold-storage-facility.webp",
   },
   {
@@ -151,7 +151,8 @@ export default function WhoWeAre() {
                   {/* Decorative accent */}
                   <div className="mt-10 flex items-center gap-3 text-cyan-400 text-sm font-bold tracking-widest uppercase">
                     <span className="w-8 h-px bg-cyan-400" />
-                    Abdulla Mullappally
+                    Abdulla Mullapally, <br /> 
+                    Managing Director 
                   </div>
                 </motion.div>
               </div>

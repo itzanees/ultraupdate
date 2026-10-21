@@ -4,8 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles as SparklesIcon } from "lucide-react";
+import { ArrowRight, Sparkles as SparklesIcon, HelpingHandIcon } from "lucide-react";
 import { useState, useEffect } from "react";
+import { ISOMotion } from "./sections/ISOStrip";
 
 // Load the 3D scene only on the client (SSR-safe)
 const HeroScene = dynamic(() => import("./three/HeroScene"), {
@@ -170,9 +171,10 @@ export default function Hero3D() {
 
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full glass text-white font-bold hover:bg-blue-900 hover:border-cyan-400 hover:border-2 transition-all duration-300"
+              className="group inline-flex items-center gap-2 px-8 py-4 rounded-full glass text-white font-bold hover:shadow-cyan-500 hover:scale-105 transition-all duration-300"
             >
               Explore Services
+              <HelpingHandIcon className="w-8 h- group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
 
@@ -203,9 +205,9 @@ export default function Hero3D() {
               </div>
             ))}
           </motion.div>
+          <ISOMotion />
         </div>
       </div>
-
       {/* ... scroll indicator ... */}
       <motion.div
         initial={{ opacity: 0 }}

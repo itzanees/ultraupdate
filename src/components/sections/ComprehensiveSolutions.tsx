@@ -66,7 +66,7 @@ export default function ComprehensiveSolutions() {
             From initial concept layout to final handover, we cover every aspect of industrial construction.
           </p>
         </div>
-{/*         
+        
         <div>
           <Link
               href="/services" 
@@ -74,7 +74,7 @@ export default function ComprehensiveSolutions() {
               >
             View Our Services
           </Link>
-        </div> */}
+        </div>
       </div>
 
       {/* Grid Container */}

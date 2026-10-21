@@ -6,7 +6,7 @@ import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   { id: 1, name: "Shiyad Ali", position: "CEO", company: "Sealand Food", content: "For the past eight years, Ultratek Arabia has been a valued partner in constructing and maintaining our cold storage facilities.", stars: 5 },
-  { id: 2, name: "Sayed Idris", position: "CEO", company: "Arabian Rose Trading Company", content: "We've been partnering with Ultratech for our cold storage needs, and the experience has been phenomenal.", stars: 5 },
+  { id: 2, name: "Sayed Idris", position: "CEO", company: "Arabian Rose Trading Company", content: "We've been partnering with Ultratek for our cold storage needs, and the experience has been phenomenal.", stars: 5 },
   { id: 3, name: "Ahmed Hassan", position: "Operations Manager", company: "Fresh Logistics Co.", content: "The warehouse layout they designed has significantly improved our operational efficiency.", stars: 4 },
   { id: 4, name: "Fatima Al-Rashid", position: "Supply Chain Director", company: "Gulf Distribution Services", content: "Excellent service and attention to detail. Their cold storage solutions have helped us maintain product quality.", stars: 4 },
 ];
