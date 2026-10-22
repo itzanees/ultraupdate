@@ -2,7 +2,7 @@
   "name": "ultratek-3d",
   "version": "0.1.0",
   "private": true,
-    "scripts": {
+  "scripts": {
     "db:local:generate": "prisma generate --schema=prisma/schema.local.prisma",
     "db:local:migrate": "prisma migrate dev --schema=prisma/schema.local.prisma",
     "db:prod:deploy": "prisma migrate deploy",
@@ -14,7 +14,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@prisma/adapter-mariadb": "^7.10.1",
     "@prisma/client": "^6.19.3",
     "@react-three/drei": "^10.7.9",
     "@react-three/fiber": "^9.8.1",
