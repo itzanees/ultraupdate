@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -81,6 +82,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "G-B14X42P581";
   return (
     <html
       lang="en"
@@ -89,6 +91,7 @@ export default function RootLayout({
     >
       <body className={`${inter.className} bg-bg text-slate-100 antialiased`}>
         <Providers>{children}</Providers>
+         <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
       </body>
     </html>
   );
