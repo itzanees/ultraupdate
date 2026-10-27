@@ -28,3 +28,15 @@ model Enquiry {
   userAgent String?
   createdAt DateTime @default(now())
 }
+
+
+model GalleryItem {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  category    String   @default("General")
+  image       String
+  featured    Boolean  @default(false)
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+}
