@@ -3,7 +3,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -28,6 +28,7 @@ model Enquiry {
   userAgent String?
   createdAt DateTime @default(now())
 }
+
 
 model GalleryItem {
   id          String   @id @default(cuid())
