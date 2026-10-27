@@ -146,6 +146,14 @@ export default function AboutPage() {
                     Projects Delivered
                   </p>
                 </div>
+                <div>
+                  <h3 className="text-4xl font-black text-gradient mb-1">
+                    30+
+                  </h3>
+                  <p className="text-sm text-muted-foreground font-medium uppercase tracking-wider">
+                    Projects Ongoing
+                  </p>
+                </div>
               </div>
             </div>
 

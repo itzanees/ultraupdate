@@ -22,6 +22,7 @@ export default async function EnquiriesPage() {
               {enquiries.filter((e) => e.status === "NEW").length} new
             </p>
           </div>
+          <a href="/admin/gallery" className="px-4 py-2 rounded-xl border border-white/10 text-white text-sm hover:bg-white/5">Gallery</a>
           <form
             action={async () => {
               "use server";

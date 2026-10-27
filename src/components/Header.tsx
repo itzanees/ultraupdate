@@ -125,6 +125,9 @@ export default function Header() {
               )}
             </AnimatePresence>
           </div>
+          <Link href="/gallery" className={navClass("/contact")}>
+            Gallery
+          </Link>
           <Link href="/contact" className={navClass("/contact")}>
             Contact
             {pathname === "/contact" && (
