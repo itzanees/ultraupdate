@@ -13,7 +13,18 @@ export const metadata = {
   title: "About Us",
   description:
     "Learn about Ultratek Arabia — a premier multi-disciplinary industrial contractor in Saudi Arabia with 25+ years of experience in cold storage, warehouse construction, and loading bay optimization.",
+  other: {
+    "description-ar": "تعرف على ألتراتك العربية، مقاول صناعي رائد في المملكة. نحن متخصصون في بناء مستودعات التبريد الجاهزة، إنشاء المستودعات، وتحسين أرصفة التحميل.",
+  },
   alternates: { canonical: "/about" },
+  keywords: [
+    "cold storage constructor in Riyadh",
+    "cold storage constructor in Dammam",
+    "مقاول مستودعات تبريد في الرياض",
+    "مقاول مستودعات تبريد في الدمام",
+    "شركة تركيب غرف تبريد في الرياض",
+    "شركة تركيب غرف تبريد في الدمام"
+  ],
   openGraph: {
     title: "About Ultratek Arabia",
     description:

@@ -53,7 +53,7 @@ export default function Hero3D() {
           <source media="(max-width: 768px)" srcSet="/hero-mob.webp" />
           <Image
             src="/hero.webp"
-            alt=""
+            alt="hero image"
             fill
             priority
             sizes="100vw"

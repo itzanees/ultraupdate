@@ -9,6 +9,9 @@ export const metadata = {
   title: "Our Services",
   description:
     "Complete industrial solutions: cold storage facilities, structural & civil works, sandwich panels, warehouse cooling, fire fighting, loading bay facilities and rack systems across Saudi Arabia.",
+   other: {
+    "description-ar": "استكشف حلولنا الصناعية الشاملة: مرافق التبريد، الأعمال الإنشائية، ألواح الساندوتش بانل، أنظمة التبريد، مكافحة الحريق، أرصفة التحميل، وأنظمة الرفوف في المملكة.",
+  },
   alternates: { canonical: "/services" },
   openGraph: {
     title: "Our Services | Ultratek Arabia",
@@ -16,6 +19,12 @@ export const metadata = {
       "Complete industrial solutions for cold storage, warehouses, and logistics infrastructure in Saudi Arabia.",
     url: "/services",
   },
+  keywords: [
+    "cold storage Saudi Arabia",
+    "industrial refrigeration contractor KSA",
+    "أنظمة التبريد الصناعي في السعودية",
+    "شركات تبريد وتجميد في السعودية"
+  ],
 };
 
 const differentiators = [

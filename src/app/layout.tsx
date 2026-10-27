@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -20,11 +21,11 @@ const SITE_URL = "https://ultratekcs.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Ultratek Arabia | Cold Storage & Warehouse Construction in Saudi Arabia",
-    template: "%s | Ultratek Arabia",
+    default: "Cold Storage & Warehouse Construction in Saudi Arabia",
+    template: "Ultratek Arabia | %s",
   },
   description:
-    "Leading cold storage, warehouse construction & loading bay solutions in Saudi Arabia. 25+ years experience. ISO certified. Serving Jeddah, Riyadh & across KSA.",
+    "Leading cold storage, warehouse construction & loading bay solutions in Saudi Arabia. 25+ years experience. ISO certified. Serving Jeddah, Riyadh, Dammam & across KSA.",
   // keywords: [
   //   "turnkey cold storage constructor in Saudi Arabia", "cold storage Saudi Arabia",
   //   "cold storage constructor in Jeddah", 
@@ -127,11 +128,18 @@ export default function RootLayout({
     <html
       lang="en"
       dir="ltr"
+      suppressHydrationWarning
       className={`${inter.variable} ${spaceGrotesk.variable}`}
     >
       <body className={`${inter.className} bg-bg text-slate-100 antialiased`}>
         <Providers>{children}</Providers>
          <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
+         <Script 
+          id="cookieyes" 
+          type="text/javascript" 
+          src="https://cdn-cookieyes.com/client_data/23e31b7fc2afab5f87b51506/script.js" 
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

@@ -7,6 +7,9 @@ export const metadata = {
   title: "Contact Us",
   description:
     "Talk to Ultratek Arabia about your cold storage, warehouse, or loading bay project. Direct line to our engineering team, response within 24 hours. Based in Jeddah, serving all of Saudi Arabia.",
+  other: {
+    "description-ar": "تواصل مع ألتراتك العربية لمناقشة مشروع التبريد أو المستودعات الخاص بك. مقرنا في جدة ونخدم جميع أنحاء المملكة. الرد خلال 24 ساعة.",
+  },
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Ultratek Arabia",

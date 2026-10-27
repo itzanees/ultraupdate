@@ -18,15 +18,109 @@ export async function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
 }
 
+// Add this to the top of your file
+const serviceKeywords: Record<string, string[]> = {
+  "cold-storage-facility": [
+    "cold storage construction Saudi Arabia",
+    "turnkey cold store builder Jeddah",
+    "refrigerated warehouse construction KSA",
+    "industrial freezer room construction Riyadh",
+    "مقاول بناء مستودعات تبريد في جدة",
+    "شركة إنشاء غرف تجميد بالسعودية",
+    "بناء مستودعات تبريد وتجميد بالرياض"
+  ],
+  "sandwich-panel-installation": [
+    "sandwich panel installation Saudi Arabia",
+    "cold room panel insulation contractor Jeddah",
+    "PIR PUR panel installation KSA",
+    "مقاول تركيب ساندوتش بانل في السعودية",
+    "تركيب ألواح العزل الحراري للمستودعات",
+    "عزل مستودعات تبريد جدة"
+  ],
+  "warehouse-cooling-system": [
+    "warehouse refrigeration system Saudi Arabia",
+    "industrial cooling system installation KSA",
+    "cold room refrigeration contractor Jeddah",
+    "أنظمة التبريد الصناعي في السعودية",
+    "تركيب معدات تبريد مستودعات بالرياض",
+    "مقاول أنظمة تبريد وتجميد جدة"
+  ],
+  "industrial-doors-shutters": [
+    "industrial doors Saudi Arabia",
+    "cold storage high speed doors KSA",
+    "warehouse shutters installation Jeddah",
+    "أبواب مستودعات تبريد في السعودية",
+    "تركيب بوابات وشترات صناعية بالرياض",
+    "أبواب عزل حراري للمستودعات"
+  ],
+  "coldroom-warehouse-lighting": [
+    "cold room lighting Saudi Arabia",
+    "warehouse LED lighting installation KSA",
+    "freezer lighting contractor Jeddah",
+    "إضاءة غرف التبريد في السعودية",
+    "تركيب إضاءة مستودعات ليد بالرياض",
+    "إضاءة مستودعات التجميد جدة"
+  ],
+  "loading-bay-facilities": [
+    "loading bay equipment Saudi Arabia",
+    "dock levelers installation KSA",
+    "warehouse loading dock construction Jeddah",
+    "أرصفة تحميل وأنظمة شحن وتفريغ جدة",
+    "تركيب ستائر وأبواب أرصفة التحميل بالسعودية",
+    "معدات منصات تحميل المستودعات"
+  ],
+  "structural-civil-works": [
+    "industrial civil works Saudi Arabia",
+    "warehouse structural construction KSA",
+    "steel structure contractor Jeddah",
+    "أعمال مدنية وإنشائية للمستودعات بالسعودية",
+    "مقاول هياكل معدنية وخرسانية جدة",
+    "بناء وتشييد مستودعات بالرياض"
+  ],
+  "fire-fighting-system": [
+    "fire fighting system Saudi Arabia",
+    "warehouse fire sprinkler installation KSA",
+    "industrial fire protection Jeddah",
+    "أنظمة مكافحة الحريق للمستودعات في السعودية",
+    "تركيب شبكات إطفاء الحرائق بالرياض",
+    "مقاول أنظمة سلامة وإطفاء جدة"
+  ],
+  "rack-system-equipment": [
+    "warehouse racking system Saudi Arabia",
+    "pallet racking installation KSA",
+    "cold storage shelving Jeddah",
+    "أنظمة رفوف التخزين للمستودعات بالسعودية",
+    "تركيب رفوف مستودعات تبريد بالرياض",
+    "معدات تخزين لوجستية جدة"
+  ]
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = services.find((s) => s.slug === slug);
   if (!service) return {};
 
+  const dynamicKeywords = serviceKeywords[slug] || [service.title, `${service.title} Saudi Arabia`];
+  const arabicDescriptions: Record<string, string> = {
+    "cold-storage-facility": "بناء مستودعات تبريد وتجميد جاهزة تسليم مفتاح في السعودية.",
+    "sandwich-panel-installation": "تركيب ألواح ساندوتش بانل المعزولة للحفاظ على درجات الحرارة.",
+    "warehouse-cooling-system": "تركيب أنظمة تبريد المستودعات وغرف التجميد بكفاءة عالية.",
+    "industrial-doors-shutters": "توريد وتركيب أبواب وشترات صناعية معزولة للمستودعات.",
+    "coldroom-warehouse-lighting": "تركيب إضاءة ليد متخصصة للمستودعات وغرف التبريد.",
+    "loading-bay-facilities": "تجهيز أرصفة التحميل وأنظمة الشحن والتفريغ للمستودعات.",
+    "structural-civil-works": "تنفيذ الأعمال الإنشائية والمدنية والهياكل الحديدية للمستودعات.",
+    "fire-fighting-system": "تركيب أنظمة مكافحة الحريق والإنذار للمستودعات الصناعية.",
+    "rack-system-equipment": "توريد وتركيب أنظمة رفوف التخزين للمستودعات الباردة.",
+  };
+
   return {
     title: service.title,
     description: service.shortDescription,
+    other: {
+      "description-ar": arabicDescriptions[slug] || "خدمات التبريد والإنشاءات الصناعية في السعودية.",
+    },
     alternates: { canonical: `/services/${service.slug}` },
+    keywords: dynamicKeywords,
     openGraph: {
       title: `${service.title} | Ultratek Arabia`,
       description: service.shortDescription,
