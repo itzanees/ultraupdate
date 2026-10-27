@@ -129,7 +129,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-4xl font-black text-gradient mb-1">
-                    150+
+                    250+
                   </h3>
                   <p className="text-sm text-muted-foreground font-medium uppercase tracking-wider">
                     Projects Delivered

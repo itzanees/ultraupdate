@@ -25,11 +25,51 @@ export const metadata: Metadata = {
   },
   description:
     "Leading cold storage, warehouse construction & loading bay solutions in Saudi Arabia. 25+ years experience. ISO certified. Serving Jeddah, Riyadh & across KSA.",
-  keywords: [
-    "cold storage Saudi Arabia", "cold storage Jeddah", "cold room Riyadh",
-    "warehouse construction KSA", "sandwich panel Saudi Arabia",
-    "loading bay Jeddah", "refrigeration Saudi Arabia",
-    "مستودعات التبريد السعودية", "غرف تبريد جدة",
+  // keywords: [
+  //   "turnkey cold storage constructor in Saudi Arabia", "cold storage Saudi Arabia",
+  //   "cold storage constructor in Jeddah", 
+  //   "cold storage constructor in Riyadh", 
+  //   "cold storage constructor in Dammam", 
+  //   "cold room installation contractor Jeddah", "cold room installation contractor Riyadh", " cold room installation contractor Dammam",
+  //   "refrigerated distribution center construction in KSA",
+  //   "warehouse construction KSA", "sandwich panel installation Saudi Arabia",
+  //   "loading bay Jeddah", "refrigeration Saudi Arabia",
+  //   "مستودعات التبريد السعودية", "غرف تبريد جدة",
+  // ],
+  keywords:[
+     // --- English High-Volume B2B Keywords ---
+    "turnkey cold storage constructor in Saudi Arabia",
+    "cold storage Saudi Arabia",
+    "cold storage constructor in Jeddah",
+    "cold storage constructor in Riyadh",
+    "cold storage constructor in Dammam",
+    "cold room installation contractor Jeddah",
+    "cold room installation contractor Riyadh",
+    "cold room installation contractor Dammam",
+    "refrigerated distribution center construction in KSA",
+    "warehouse construction KSA",
+    "sandwich panel installation Saudi Arabia",
+    "loading bay Jeddah",
+    "refrigeration Saudi Arabia",
+    "industrial refrigeration contractor KSA",
+    
+    // --- Arabic High-Volume B2B Keywords (Saudi Market) ---
+    "شركة بناء مستودعات تبريد تسليم مفتاح بالسعودية",
+    "مستودعات التبريد والتجميد في السعودية",
+    "مقاول مستودعات تبريد في جدة",
+    "مقاول مستودعات تبريد في الرياض",
+    "مقاول مستودعات تبريد في الدمام",
+    "شركة تركيب غرف تبريد في جدة",
+    "شركة تركيب غرف تبريد في الرياض",
+    "شركة تركيب غرف تبريد في الدمام",
+    "إنشاء مراكز توزيع لوجستية مبردة بالمملكة",
+    "بناء وتشييد مستودعات في السعودية",
+    "مقاول تركيب ساندوتش بانل السعودية",
+    "أرصفة تحميل وأنظمة شحن وتفريغ جدة",
+    "أنظمة التبريد الصناعي في السعودية",
+    "شركات تبريد وتجميد في السعودية",
+    "مستودعات التبريد السعودية",
+    "غرف تبريد جدة"
   ],
   verification: {
     google:'aT7m9xT91dIfp3m0sXO3UFGeeP78SEpxsUdXMSeAe_4'
